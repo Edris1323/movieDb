@@ -1,0 +1,26 @@
+/* styling */
+.banner{
+    color: white;
+    object-fit: contain;
+    background-image: url("../../assets/image/banner.jpeg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+
+.content{
+    padding-left: 15px;
+    padding-top: 330px;
+}
+.logoImg{
+    width: 150px;
+}
+.title{
+    font-size: 3rem;
+    font-weight: 800;
+    padding-bottom: 0.3rem;
+}
+.discription{
+    padding-top: 0.5rem;
+}
