@@ -4,12 +4,9 @@ import { BsPlusCircle } from "react-icons/bs";
 import { GoCheckCircleFill } from "react-icons/go";
 import { IoIosArrowDropdownCircle } from "react-icons/io";
 
-const Image_Base = "https://image.tmdb.org/t/p/w500"
+const Image_Base = "https://image.tmdb.org/t/p/w500";
 
-
-// FIX 1: Pass 'movie' as a prop so the data is available
 function MovieCard({ movie }) {
-  // FIX 2: Changed parentheses () to brackets [] to make it a valid array
   const genres = ["Adventure", "Action", "Thriller"];
 
   return (
@@ -36,29 +33,29 @@ function MovieCard({ movie }) {
         {/* button row */}
         <div className={styles.buttonsRow}>
           <FaCirclePlay
-            className={styles.circleButon}
+            className={styles.circleButton}
             color="white"
-            size={40}
+            size={30}
           />
           <BsPlusCircle
-            className={styles.circleButon}
+            className={styles.circleButton}
             color="white"
-            size={40}
+            size={30}
           />
           <GoCheckCircleFill
-            className={styles.circleButon}
+            className={styles.circleButton}
             color="white"
-            size={40}
+            size={30}
           />
           <IoIosArrowDropdownCircle
             className={styles.circleButtonsRow}
             color="white"
-            size={40}
+            size={30}
           />
         </div>
 
         {/* meta data row */}
-        {/* FIX 3: Changed 'spam' to 'span' */}
+
         <div className={styles.metaRow}>
           <span className={styles.tag}>U/A 16+</span>
           <span className={styles.tag}>Movie</span>
@@ -66,8 +63,8 @@ function MovieCard({ movie }) {
         </div>
 
         {/* genres */}
-        <div className={styles.geners}>
-          {/* FIX 4: Fixed spelling from 'geners' to 'genres' */}
+        <div className={styles.genres}>
+         
           {genres.map((g, index) => {
             return (
               <span key={index}>

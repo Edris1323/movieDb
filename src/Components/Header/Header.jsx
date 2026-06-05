@@ -27,8 +27,10 @@ function Header() {
   return (
     <header className={`${styles.header} ${isScrolled ? styles.scrolled : ""}`}>
       <div className={styles.container}>
+
         {/* logo */}
         <img className={styles.logo} src={logo} alt="Netflix Logo" />
+
         {/* //navigation links */}
         <nav className={styles.nav}>
           <Link className={styles.navLink} href="">
@@ -51,7 +53,7 @@ function Header() {
           </Link>
         </nav>
 
-        {/* rihgt side icons */}
+        {/* right side icons */}
         <div className={styles.rightIcons}>
           {/* // search icon */}
           <div className={styles.searchContainer}>
@@ -69,6 +71,7 @@ function Header() {
               />
             )}
           </div>
+
           {/* // notification icon */}
           <button className={styles.notificationButton}>
             <Bell size={20} />
@@ -81,8 +84,9 @@ function Header() {
               onClick={() => setIsProfileOpen(!isProfileOpen)}
               className={styles.profileButton}
             >
+
               {/* user icon */}
-              <div className={styles.profileAvator}>
+              <div className={styles.profileIcon}>
                 <User size={20} />
               </div>
 
@@ -92,7 +96,7 @@ function Header() {
             {isProfileOpen && (
               <div className={styles.profileMenu}>
                 <Link className={styles.profileMenuItem}>Account</Link>
-                <Link className={styles.profileMenuItem}>help Center</Link>
+                <Link className={styles.profileMenuItem}>Help Center</Link>
                 <hr className={styles.profileMenuDivider} />
                 <Link className={styles.profileMenuItem}>Sign Out</Link>
               </div>

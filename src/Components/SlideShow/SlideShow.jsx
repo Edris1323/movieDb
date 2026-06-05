@@ -5,7 +5,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import { Navigation } from "swiper/modules";
 
-// Fix: Add curly braces around the parameters to destructure props
+
 function SlideShow({ title, movies }) {
   return (
     <div>
@@ -18,7 +18,7 @@ function SlideShow({ title, movies }) {
           slidesPerView={5.8}
         >
           {movies?.map((movie) => (
-            // Fix: Add a unique key prop when mapping arrays
+           
             <SwiperSlide key={movie.id}>
               <MovieCard movie={movie} />
             </SwiperSlide>

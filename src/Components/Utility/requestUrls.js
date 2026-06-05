@@ -1,6 +1,3 @@
-// API_KEY = import.meta.env.VITE_TMDB_API_KEY
-
-// const API_KEY = "7e1babada3994adf22421433b94d004b";
 const API_KEY = import.meta.env.VITE_TMDB_API_KEY;
 const requests = {
   fetchTrending: `/trending/all/week?api_key=${API_KEY}&language=en-US`,
@@ -13,6 +10,3 @@ const requests = {
   fetchDocumentaries: `/discover/movie?api_key=${API_KEY}&with_genres=99`,
 };
 export default requests;
-
-
-// https://api.themoviedb.org/3/trending/all/week?api_key=e8df287bc7283a5f030e3169e055d935&language=en-US
